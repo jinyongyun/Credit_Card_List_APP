@@ -348,9 +348,6 @@ override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
 ```
 
 이렇게 선택한 셀의 CreditCard 객체의 id를 통해 
-
-![스크린샷 2023-12-24 오전 12.23.57.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3de099d9-93f3-4629-a573-b788330d4c5a/4106ee7b-6d20-4551-9fc7-4c2402ae5316/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-12-24_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.23.57.png)
-
 ref.child로 path를 전달하여 item0/isSelected 경로가 포함하는 곳에 setValue를 true로 설정하면 된다.
 
 실제로 시뮬을 돌려보면 셀을 선택하자마자 디비상에서 isSelected가 새로 생겨나고 해당 값이 true로 바뀌는 것을 알 수 있다.
